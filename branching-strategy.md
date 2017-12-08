@@ -1,10 +1,14 @@
 ### Branching Strategy
-As new components and updates are made, Josh will approve them by merging them in to `master`.
+It's always better to create local branches to work on a specific issue. Makes life easier for you if you are the kind who enjoys multiple things parallels.
+These should also be created directly off of the `master` branch.
+```
+$ git checkout -b commit-message-type/subject -t upstream/master
+```
 
-- Work on new components in the `components--dev/` folder
-- Work on core of the Lexicon ( build tools or packages ) in the `core/` folder
-- Once complete, request that they be merged by speaking with Josh
-- Once merged, move the component branch to `components--merged/`
+an example would be:
+```
+$ git checkout -b feat/search -t upstream/master
+```
 
 #### Commit Message Format
 Each commit message consists of type, scope and subject:
