@@ -1,4 +1,4 @@
-The following document outlines a reasonable style guide for CSS development in all BB&T codebases. These guidelines strongly encourage the use of existing, common, sensible patterns.
+The following document outlines a reasonable style guide for CSS development in all codebases. These guidelines strongly encourage the use of existing, common, sensible patterns.
 
 This is a living document and new ideas are always welcome. Please contribute.
 
