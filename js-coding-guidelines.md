@@ -1,9 +1,9 @@
-The following document outlines a reasonable style guide for JS development in all BB&T codebases. These guidelines strongly encourage the use of existing, common, sensible patterns.
+The following document outlines a reasonable style guide for JS development in all codebases. These guidelines strongly encourage the use of existing, common, sensible patterns.
 
 This is a living document and new ideas are always welcome. Please contribute.
 
 
-The BB&T JS Coding Guidelines are divides classes in to several categories:
+The JS Coding Guidelines are divides classes in to several categories:
 
 
 - [Whitespace](#whitespace)
@@ -303,7 +303,7 @@ if ( true ) {
 ```
 
 ### Quotes
-At BB&T we use single quotes unless we are using them in HTML properties.
+Uuse single quotes unless we are using them in HTML properties.
 ```js
 $('<div class="class"></div>');
 ```
