@@ -719,7 +719,7 @@ Objects are declared using camel case but with the first letter capitalized:
 let MilleniumFalcon = new Object();
 ```
 
-All modules within the Lexicon will use the [Definitive Module Pattern](https://github.com/tim-montague/Definitive-Module-Pattern). Within these modules, functions are grouped in to `_public` and `_private` objects which are `const` variables that do not follow the above conventions.
+All modules within will use the [Definitive Module Pattern](https://github.com/tim-montague/Definitive-Module-Pattern). Within these modules, functions are grouped in to `_public` and `_private` objects which are `const` variables that do not follow the above conventions.
 
 The `_private` object stores methods that should not be publicly accessible. The `_public` object stores methods that are publicly accessible.
 ```js
@@ -807,7 +807,7 @@ SYMBOLIC_CONSTANTS_LIKE_THIS;
 
 ### Faces of `this`
   Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
-  ```
+  ```js
   function Device( opts ) {
     this.value = null;
 
@@ -831,7 +831,7 @@ SYMBOLIC_CONSTANTS_LIKE_THIS;
   ```
 
   When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
-  ```
+  ```js
   // eg. lodash/underscore, _.bind()
   function Device( opts ) {
     this.value = null;
@@ -858,7 +858,7 @@ SYMBOLIC_CONSTANTS_LIKE_THIS;
   ```
 
   As a last resort, create an alias to this using self as an Identifier. This is extremely bug prone and should be avoided whenever possible.
-  ```
+  ```js
   function Device( opts ) {
     var self = this;
 
@@ -876,7 +876,7 @@ SYMBOLIC_CONSTANTS_LIKE_THIS;
 
 ### Use `thisArg`
 Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
-```
+```js
 var obj;
 obj = {
   f: 'foo',
