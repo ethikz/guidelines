@@ -1,9 +1,3 @@
----
-title: JS Coding Guidelines
-label: JS Coding Guidelines
-status: ready
----
-
 The following document outlines a reasonable style guide for JS development in all BB&T codebases. These guidelines strongly encourage the use of existing, common, sensible patterns.
 
 This is a living document and new ideas are always welcome. Please contribute.
